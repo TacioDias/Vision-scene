@@ -118,7 +118,7 @@ h2 {
 }
 
 #generos div a  {
-    font-family: 'Dosis';
+    font-family: 'Bebas';
     letter-spacing: 2px;
     -webkit-text-stroke: 1.5px black;
     position: relative;
@@ -126,7 +126,6 @@ h2 {
     width: 85%;
     font-size: 1.5em;
     text-decoration: none;
-    font-family: fantasy;
     color: white;
     font-weight: normal;
     background-color:rgba(0, 139, 139, 0.363)/*rgba(0, 139, 139, 0.856)*/;
