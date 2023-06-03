@@ -52,7 +52,6 @@ header .menus    {
 }
 
 header .menus  a  {
-    font-family: 'PT Sans Narrow', sans-serif;
     padding: 0px 5px 0px 5px;
     transition: 0.15s;
     border-radius: 10px;
