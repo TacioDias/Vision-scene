@@ -1,13 +1,25 @@
 @charset "utf-8";
 
+/* Titulo */
 @font-face {
     font-family: 'Bebas';
     src: url('fontes/BebasNeue-Regular.ttf');
 }
+/* Paragrafo. */
+@font-face {
+    font-family: 'roboto';
+    src: url('fontes/Roboto_Condensed/RobotoCondensed-Light.ttf');
+}
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+:root   {
+    --cor0: blue;
+    --cor2: blue;
+    --cor3: blue;
+    --cor4: #00b8c2;
 
-/* Fontes sugeridas para paragrafo. */
+}
+
+
 
 body    {
     background-image: url('fundo-site/fundo-do-site-2.png');
@@ -15,7 +27,7 @@ body    {
     background-attachment: fixed;
     background-repeat: no-repeat; 
     color: white;
-    font-family: 'Bebas';
+    font-family: 'bebas';
     margin: 0;
 }
 
@@ -25,7 +37,7 @@ header  {
     justify-content: flex-start;
     flex-direction: column;
     align-content: end;
-    width: 98%;
+    width: 95%;
     height: auto;
     margin: 20px auto 20px auto;
     border: 5px solid #008086;
@@ -52,12 +64,12 @@ header .menus    {
 }
 
 header .menus  a  {
+    font-family: 'roboto';
     padding: 0px 5px 0px 5px;
     transition: 0.15s;
     border-radius: 10px;
     margin: 0px 3px 0px 3px;
-    letter-spacing: 2px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-decoration: none;  
 }
 
@@ -79,13 +91,6 @@ h2 {
 
 
 
-:root   {
-    --cor0: blue;
-    --cor2: blue;
-    --cor3: blue;
-    --cor4: blue;
-
-}
 
 #generos    {
     display: flex;
@@ -119,7 +124,7 @@ h2 {
 
 #generos div a  {
     width: 92%;
-    font-family: 'Bebas';
+    font-family: 'bebas';
     position: relative;
     top: 50px;
     letter-spacing: 5px;
