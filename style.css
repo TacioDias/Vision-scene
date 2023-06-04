@@ -103,32 +103,30 @@ h2 {
 #generos  div  {
     width: 290px;
     height: 160px;
-    border-radius: 14px;
-    margin: 10px 0 10px 0;
-    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
     border: 3px  transparent;
     border-style: solid;
+    margin: 10px 0 10px 0;
+    transition: 0.3s;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.644);
     background-position: center;
     background-size: 105% 105%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #generos div a  {
+    width: 92%;
     font-family: 'Bebas';
-    letter-spacing: 2px;
-    -webkit-text-stroke: 1.5px black;
     position: relative;
     top: 50px;
-    width: 85%;
-    font-size: 1.5em;
+    letter-spacing: 5px;
+    font-size: 1.8em;
     text-decoration: none;
-    color: white;
-    font-weight: normal;
-    background-color:rgba(0, 139, 139, 0.363)/*rgba(0, 139, 139, 0.856)*/;
+    color: white; 
+    background-color:rgba(0, 49, 49, 0.596);
     border: 4px solid rgba(0, 139, 139, 0.856) ;
     border-radius: 6px;
     transition: 0.3s;
@@ -136,9 +134,9 @@ h2 {
 }
 
 #generos div a:hover    {
-    filter: brightness(125%);
+    border-color: rgb(0, 207, 207);
     box-shadow: 0 5px 3px 2px rgba(0, 0, 0, 0.253);
-    background-color: darkcyan;
+    background-color: rgb(0, 139, 139);
 }
 
 @media (max-width: 800px) {
