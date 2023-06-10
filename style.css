@@ -20,8 +20,6 @@
 
 }
 
-
-
 body    {
     background-image: url('fundo-site/fundo-do-site-2.png');
     background-size: 100% 100vh;
@@ -48,8 +46,9 @@ header  {
 
 header hr   {
     width: 98%;
-    height: 1.7px;
-    background-color: white;
+    height: 1.2px;
+    margin-bottom: 12px;
+    color: white;
     border-radius: 20px;
 }
 
@@ -60,25 +59,55 @@ header h1   {
     text-shadow: 0px 5px 0px #00747a;
 }
 
-header .menus    {
+
+
+header div  {
+    margin: 0 15px 0 15px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header div nav  {
+    display: inline;
     margin-bottom: 10px;
 }
 
-header .menus  a  {
+header a  {
     color:var(--cor-borda);
     font-family: 'roboto';
-    padding: 0px 5px 0px 5px;
+    letter-spacing: 1px;
+    padding: 1.5px 0px 1.5px 5px;
     transition: 0.15s;
-    border-radius: 7px;
+    
     border: 3px solid transparent;
     margin: 0px 3px 0px 3px;
     font-size: 1.4em;
     text-decoration: none;  
 }
 
-header .menus  a:hover  {
-    
-    border: 3px solid var(--cor-borda);
+@media (max-width: 720px)   {
+    header a    {
+        margin-top: 10px;
+        display: block;
+        border: 3px solid var(--cor4);
+        padding: 3px;
+        border-radius: 8px;
+    }
+}
+
+header > div > nav > .a1:hover    {
+    border-top-color: var(--cor4);
+    border-bottom-color: var(--cor4);
+    border-left-color: var(--cor4);
+    border-radius: 8px 0 0 8px;
+}
+
+header > div > .nav2 > .a2:hover    {
+    border-top-color: var(--cor4);
+    border-bottom-color: var(--cor4);
+    border-right-color: var(--cor4);
+    border-radius: 0 8px 8px 0;
 }
 
 h1  {
@@ -92,9 +121,6 @@ h2 {
 	font-size: 3em;
 	
 }
-
-
-
 
 #generos    {
     display: flex;
