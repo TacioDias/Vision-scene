@@ -16,8 +16,31 @@
     --cor2: blue;
     --cor-fonte: #a8fbff;
     --cor-fundo: #00b8c2;
+    --cor-fundo2: rgb(29, 29, 29);
     --cor-borda: rgba(0, 139, 139, 0.856);
+    --cor-borda-active: rgba(0, 88, 88, 0.856);
 
+}
+
+p   {
+    font-family: 'roboto';
+    font-size: 1.2em;
+}
+
+main    {
+    max-width: 1280px;
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+    margin: 3% auto auto auto;
+    padding: 0.5em 2em;
+    background-color: var(--cor-fundo2);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3em;
+    border-bottom: 3px solid var(--cor-borda)   ;
 }
 
 body    {
@@ -31,12 +54,12 @@ body    {
 }
 
 footer  {
-    bottom:end;
-    position: relative;
     width: 100%;
-    height: 200px;
+    margin-top: 10vh;
+    max-height: 1000px;
+    position: relative;
+    bottom: 0;
     background-color: rgb(17, 17, 17);
-    margin-top: 50px;
 }
 
 header  {
@@ -52,13 +75,7 @@ header  {
     border-radius: 7px;
 }
 
-header hr   {
-    width: 99%;
-    height: 1px;
-    margin-bottom: 12px;
-    background-color: white;
-    border-radius: 20px;
-}
+
 
 header h1   {
     -webkit-text-stroke: 1.5px black;
@@ -68,16 +85,15 @@ header h1   {
     text-shadow: 0px 5px 0px #00747a;
 }
 
-
-
 header div  {
     margin: 0 15px 0 15px ;
     display: flex;
     justify-content: space-between;
-    
+    align-content: center;    
 }
 
 header div nav  {
+    margin-top: 12px;
     padding: 5px 5px 5px 5px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.096);
